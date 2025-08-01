@@ -153,6 +153,9 @@ const Memories: React.FC = () => {
           <p className="romantic-subtitle">
             Precious moments with my pretty flower, captured in time
           </p>
+          <p className="romantic-subtitle">
+            (ps..click the cards)
+          </p>
         </motion.div>
 
         <motion.div className="memories-grid" variants={containerVariants}>
