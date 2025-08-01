@@ -19,13 +19,13 @@ const HerLetters: React.FC = () => {
       date: "January 26, 2025",
       mood: "💕"
     },    
-    // {
-    //   id: 2,
-    //   title: "Random Love message you gave me when i asked you to make me cry🤧😹❤️",
-    //   content: "I know I can be a lot sometimes - my mood swings, my overthinking, my need for constant reassurance. But you handle all of it with such patience and love. You never make me feel like I'm too much.\n\nI love how you call me your beautiful chaos because that's exactly what I am, and somehow you love me for it. Thank you for choosing me every day, even on the days when I'm not easy to love.",
-    //   date: "August 10, 2025",
-    //   mood: "🌹"
-    // },    
+    {
+      id: 2,
+      title: "Random Love message you gave me when i asked you to make me cry🤧😹❤️",
+      content: "You're the best thing that has ever happened to me🥺\nI want you to know that!\nKeep being my dramatic ass💋\nMy first class baby🫶🏽\nMy thunder among lightning😹💕\nThe only flower in my garden🤭\nMy princess🌚\nMy crybaby😹❤\nI love you my short small preek boy😹😹",
+      date: "forgot the date😭",
+      mood: "🌹"
+    },    
     {
       id: 2,
       title: "When you told me what your biggest fear was❤️",
