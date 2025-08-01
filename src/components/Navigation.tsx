@@ -12,7 +12,7 @@ const Navigation: React.FC = () => {
     { path: '/letters', label: 'Love Letters', icon: '💌' },
     { path: '/her-letters', label: 'Her Letters', icon: '💕' },
     { path: '/memories', label: 'Memories', icon: '📸' },
-    { path: '/flowers', label: 'Virtual Flowers', icon: '🌸' }
+
   ];
 
   return (
