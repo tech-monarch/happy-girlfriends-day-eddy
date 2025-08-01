@@ -1,0 +1,204 @@
+:root {
+  --primary-soft: #f8f4ff;
+  --secondary-lavender: #e6d7ff;
+  --warm-cream: #faf7f2;
+  --soft-purple: #b794f6;
+  --deep-purple: #805ad5;
+  --accent-rose: #f093a0;
+  --text-dark: #2d3748;
+  --text-light: #4a5568;
+  --shadow: rgba(128, 90, 213, 0.15);
+  --glow: rgba(183, 148, 246, 0.4);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(
+    135deg,
+    var(--primary-soft) 0%,
+    var(--secondary-lavender) 30%,
+    var(--warm-cream) 70%,
+    #f0e6ff 100%
+  );
+  min-height: 100vh;
+  overflow-x: hidden;
+  color: var(--text-dark);
+}
+
+.App {
+  min-height: 100vh;
+  position: relative;
+}
+
+.main-content {
+  padding-top: 80px;
+  min-height: 100vh;
+}
+
+/* Romantic Typography */
+.romantic-title {
+  font-family: "Dancing Script", cursive;
+  font-size: 3.5rem;
+  font-weight: 700;
+  background: linear-gradient(
+    45deg,
+    var(--deep-purple),
+    var(--soft-purple),
+    var(--accent-rose)
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-align: center;
+  margin-bottom: 1rem;
+  animation: glow 2s ease-in-out infinite alternate;
+}
+
+.romantic-subtitle {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.2rem;
+  font-weight: 300;
+  color: var(--text-light);
+  text-align: center;
+  margin-bottom: 2rem;
+  opacity: 0.9;
+}
+
+/* Glowing Animation */
+@keyframes glow {
+  from {
+    text-shadow: 0 0 20px var(--glow), 0 0 30px var(--glow),
+      0 0 40px var(--glow);
+  }
+  to {
+    text-shadow: 0 0 30px var(--glow), 0 0 40px var(--glow),
+      0 0 50px var(--glow);
+  }
+}
+
+/* Heartbeat Animation */
+@keyframes heartbeat {
+  0% {
+    transform: scale(1);
+  }
+  14% {
+    transform: scale(1.1);
+  }
+  28% {
+    transform: scale(1);
+  }
+  42% {
+    transform: scale(1.1);
+  }
+  70% {
+    transform: scale(1);
+  }
+}
+
+.heartbeat {
+  animation: heartbeat 1.5s ease-in-out infinite;
+}
+
+/* Floating Animation */
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
+.floating {
+  animation: float 3s ease-in-out infinite;
+}
+
+/* Card Styles */
+.romantic-card {
+  background: rgba(255, 255, 255, 0.9);
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+  padding: 2rem;
+  margin: 1rem;
+  box-shadow: 0 8px 32px var(--shadow);
+  border: 1px solid rgba(255, 182, 193, 0.3);
+  transition: all 0.3s ease;
+}
+
+.romantic-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 40px var(--shadow);
+  border-color: var(--accent-rose);
+}
+
+/* Button Styles */
+.romantic-button {
+  background: linear-gradient(45deg, var(--accent-rose), var(--soft-purple));
+  border: none;
+  border-radius: 25px;
+  padding: 12px 30px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  color: white;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(155, 93, 229, 0.3);
+  text-decoration: none;
+  display: inline-block;
+  text-align: center;
+}
+
+.romantic-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(155, 93, 229, 0.4);
+  filter: brightness(1.1);
+}
+
+/* Container Styles */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.page-container {
+  min-height: calc(100vh - 80px);
+  padding: 2rem 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .romantic-title {
+    font-size: 2.5rem;
+  }
+
+  .romantic-subtitle {
+    font-size: 1rem;
+  }
+
+  .romantic-card {
+    margin: 0.5rem;
+    padding: 1.5rem;
+  }
+
+  .main-content {
+    padding-top: 70px;
+  }
+}
+
+@media (max-width: 480px) {
+  .romantic-title {
+    font-size: 2rem;
+  }
+
+  .container {
+    padding: 0 15px;
+  }
+}

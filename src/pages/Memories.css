@@ -1,0 +1,396 @@
+.memories-page {
+  min-height: 100vh;
+  padding: 2rem 0;
+}
+
+.page-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.memories-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+  perspective: 1000px;
+}
+
+.memory-card.polaroid {
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 8px 32px rgba(155, 93, 229, 0.15);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  transform-style: preserve-3d;
+  padding: 1rem;
+  border: 1px solid rgba(183, 148, 246, 0.3);
+}
+
+.memory-card.polaroid:hover {
+  transform: translateY(-10px) rotateY(5deg) rotateX(5deg);
+  box-shadow: 0 20px 40px rgba(128, 90, 213, 0.25);
+}
+
+.polaroid-image {
+  position: relative;
+  width: 100%;
+  height: 200px;
+  border-radius: 8px;
+  overflow: hidden;
+  margin-bottom: 1rem;
+}
+
+.polaroid-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: all 0.3s ease;
+}
+
+.image-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(155, 93, 229, 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: all 0.3s ease;
+  backdrop-filter: blur(2px);
+}
+
+.memory-card:hover .image-overlay {
+  opacity: 1;
+}
+
+.view-story {
+  color: white;
+  font-weight: 600;
+  font-size: 1.1rem;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.polaroid-caption {
+  padding: 0.5rem;
+}
+
+.memory-title {
+  font-family: "Dancing Script", cursive;
+  font-size: 1.6rem;
+  color: var(--deep-purple);
+  margin-bottom: 0.5rem;
+  line-height: 1.3;
+}
+
+.memory-description {
+  color: var(--text-dark);
+  font-size: 0.95rem;
+  line-height: 1.5;
+  margin-bottom: 1rem;
+  opacity: 0.9;
+}
+
+.memory-meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.85rem;
+  color: var(--text-light);
+  opacity: 0.8;
+}
+
+.memory-date,
+.memory-location {
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+}
+
+/* Modal Styles */
+.memory-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.8);
+  backdrop-filter: blur(10px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  padding: 2rem;
+}
+
+.memory-story {
+  background: rgba(255, 255, 255, 0.98);
+  backdrop-filter: blur(20px);
+  border-radius: 25px;
+  max-width: 700px;
+  max-height: 90vh;
+  overflow-y: auto;
+  position: relative;
+  box-shadow: 0 8px 32px rgba(128, 90, 213, 0.15);
+  border: 1px solid rgba(183, 148, 246, 0.3);
+}
+
+.close-btn {
+  position: absolute;
+  top: 1.5rem;
+  right: 1.5rem;
+  background: rgba(255, 182, 193, 0.2);
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  font-size: 1.2rem;
+  color: var(--text-dark);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+  z-index: 10;
+}
+
+.close-btn:hover {
+  background: rgba(255, 182, 193, 0.4);
+  transform: scale(1.1);
+}
+
+.story-image {
+  width: 100%;
+  height: 300px;
+  border-radius: 25px 25px 0 0;
+  overflow: hidden;
+}
+
+.story-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.story-content {
+  padding: 2.5rem;
+}
+
+.story-header {
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.story-title {
+  font-family: "Dancing Script", cursive;
+  font-size: 2.5rem;
+  color: var(--deep-purple);
+  margin-bottom: 1rem;
+  line-height: 1.2;
+}
+
+.story-meta {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  font-size: 0.9rem;
+  color: var(--text-light);
+  opacity: 0.8;
+}
+
+.story-date,
+.story-location {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.story-text {
+  font-family: "Dancing Script", cursive;
+  font-size: 1.3rem;
+  line-height: 1.8;
+  color: var(--text-dark);
+  text-align: justify;
+  margin-bottom: 2rem;
+}
+
+.story-footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  padding-top: 2rem;
+  border-top: 2px solid rgba(255, 182, 193, 0.3);
+}
+
+.heart-decoration {
+  font-size: 1.5rem;
+  animation: heartbeat 2s ease-in-out infinite;
+}
+
+.story-signature {
+  font-family: "Dancing Script", cursive;
+  font-size: 1.2rem;
+  color: var(--deep-purple);
+  font-style: italic;
+  text-align: center;
+}
+
+/* Polaroid Animation Effects */
+@keyframes polaroidFloat {
+  0%,
+  100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  25% {
+    transform: translateY(-5px) rotate(1deg);
+  }
+  50% {
+    transform: translateY(-10px) rotate(0deg);
+  }
+  75% {
+    transform: translateY(-5px) rotate(-1deg);
+  }
+}
+
+.memory-card:nth-child(odd) {
+  animation: polaroidFloat 6s ease-in-out infinite;
+}
+
+.memory-card:nth-child(even) {
+  animation: polaroidFloat 6s ease-in-out infinite reverse;
+}
+
+/* Hover Glow Effect */
+.memory-card::before {
+  content: "";
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  right: -2px;
+  bottom: -2px;
+  background: linear-gradient(
+    45deg,
+    var(--secondary-pink),
+    var(--lavender),
+    var(--purple)
+  );
+  border-radius: 12px;
+  z-index: -1;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.memory-card:hover::before {
+  opacity: 0.7;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  .memories-grid {
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 1.5rem;
+  }
+
+  .memory-card.polaroid {
+    padding: 0.8rem;
+  }
+
+  .polaroid-image {
+    height: 180px;
+  }
+
+  .memory-title {
+    font-size: 1.4rem;
+  }
+
+  .memory-description {
+    font-size: 0.9rem;
+  }
+
+  .memory-meta {
+    font-size: 0.8rem;
+    flex-direction: column;
+    gap: 0.5rem;
+    align-items: flex-start;
+  }
+
+  .memory-modal {
+    padding: 1rem;
+  }
+
+  .story-content {
+    padding: 2rem;
+  }
+
+  .story-title {
+    font-size: 2rem;
+  }
+
+  .story-text {
+    font-size: 1.1rem;
+  }
+
+  .story-meta {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .memories-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .memory-card.polaroid {
+    padding: 0.6rem;
+  }
+
+  .polaroid-image {
+    height: 160px;
+  }
+
+  .memory-title {
+    font-size: 1.3rem;
+  }
+
+  .story-content {
+    padding: 1.5rem;
+  }
+
+  .story-title {
+    font-size: 1.8rem;
+  }
+
+  .story-text {
+    font-size: 1rem;
+  }
+
+  .story-image {
+    height: 250px;
+  }
+
+  .close-btn {
+    top: 1rem;
+    right: 1rem;
+    width: 35px;
+    height: 35px;
+    font-size: 1rem;
+  }
+}
+
+/* Disable animations on mobile for better performance */
+@media (max-width: 768px) {
+  .memory-card:nth-child(odd),
+  .memory-card:nth-child(even) {
+    animation: none;
+  }
+
+  .memory-card:hover {
+    transform: translateY(-5px);
+  }
+}
