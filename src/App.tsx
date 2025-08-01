@@ -6,6 +6,7 @@ import Home from './pages/Home';
 import LoveLetters from './pages/LoveLetters';
 import HerLetters from './pages/HerLetters';
 import Memories from './pages/Memories';
+import VirtualFlowers from './pages/VirtualFlowers';
 
 
 import FloatingHearts from './components/FloatingHearts';
@@ -28,8 +29,7 @@ function App() {
             <Route path="/letters" element={<LoveLetters />} />
             <Route path="/her-letters" element={<HerLetters />} />
             <Route path="/memories" element={<Memories />} />
-
-
+            <Route path="/flowers" element={<VirtualFlowers />} />
           </Routes>
         </motion.main>
       </div>
