@@ -77,6 +77,10 @@ const HerLetters: React.FC = () => {
         >
           <h1>Letters from youu💌</h1>
           <p>Beautiful words from my pretty flower to me🌚</p>
+          
+          <p>
+            (ps..click the cards)
+          </p>
         </motion.header>
 
         <motion.div 
