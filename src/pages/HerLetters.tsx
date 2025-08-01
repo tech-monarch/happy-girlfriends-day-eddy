@@ -19,15 +19,15 @@ const HerLetters: React.FC = () => {
       date: "January 26, 2025",
       mood: "💕"
     },    
+    // {
+    //   id: 2,
+    //   title: "Random Love message you gave me when i asked you to make me cry🤧😹❤️",
+    //   content: "I know I can be a lot sometimes - my mood swings, my overthinking, my need for constant reassurance. But you handle all of it with such patience and love. You never make me feel like I'm too much.\n\nI love how you call me your beautiful chaos because that's exactly what I am, and somehow you love me for it. Thank you for choosing me every day, even on the days when I'm not easy to love.",
+    //   date: "August 10, 2025",
+    //   mood: "🌹"
+    // },    
     {
       id: 2,
-      title: "Random Love message you gave me when i asked you to make me cry🤧😹❤️",
-      content: "I know I can be a lot sometimes - my mood swings, my overthinking, my need for constant reassurance. But you handle all of it with such patience and love. You never make me feel like I'm too much.\n\nI love how you call me your beautiful chaos because that's exactly what I am, and somehow you love me for it. Thank you for choosing me every day, even on the days when I'm not easy to love.",
-      date: "August 10, 2025",
-      mood: "🌹"
-    },    
-    {
-      id: 3,
       title: "When you told me what your biggest fear was❤️",
       content: "Okay\nMy biggest fear is that I won't be appreciating you and stuff just yk taking you for will I say granted yes taking you for granted\nAnd then you realise and leave me and go for another girl\nAnd then me I'll be left like da\n\nHeartbroken\nSo, when you said this\nI was like Hmmm\nAnd ofc no man will Really love me as much as you do\nAnd I'll settle for the bare minimum💔",
       date: "May 14, 2025",
