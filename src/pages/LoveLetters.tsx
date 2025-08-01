@@ -102,6 +102,10 @@ const LoveLetters: React.FC = () => {
           <p className="romantic-subtitle">
             Words from my heart..
           </p>
+          
+          <p className="romantic-subtitle">
+            (ps..click the cards)
+          </p>
           <motion.button
             className="romantic-button add-letter-btn"
             onClick={() => setShowNewLetterForm(true)}
