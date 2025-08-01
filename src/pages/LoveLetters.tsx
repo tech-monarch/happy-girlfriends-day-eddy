@@ -15,21 +15,21 @@ const LoveLetters: React.FC = () => {
     {
       id: 1,
     title: "To My Pretty Flower",
-    content: "I don’t even know how to explain this, but every time I’m not talking to you, there’s this empty space in me. Like something’s missing. I catch myself smiling randomly when I think about you — and trust me, that happens a lot.\n\nYou’ve made me feel safe in a way I didn’t even know I needed. I’ve never been this sure about someone before. I don’t just love you, I like you — your laugh, your mood swings, the way you talk about random things like they’re the most important thing in the world.\n\nI pray for us. Every night. That we stay together, grow together, and keep choosing each other no matter what. You’re my person.",
+    content: "I don’t even know how to explain this, but every time I’m not talking to you, there’s this empty space in me. Like something’s missing. I catch myself smiling randomly when I think about you, and trust me, that happens a lot.\n\nYou’ve made me feel safe in a way I didn’t even know I needed. I’ve never been this sure about someone before. I don’t just love you, I like you, your laugh, your mood swings, the way you talk about random things like they’re the most important thing in the world.\n\nI pray for us. Every night. That we stay together, grow together, and keep choosing each other no matter what. You’re my person.",
     date: "August 1, 2025",
     mood: "💕"
   },
   {
     id: 2,
     title: "To My Baby",
-    content: "I don’t know if I tell you this enough, but I really, really love you. Not just because you’re beautiful — but because being with you feels like peace. You’ve seen me at my worst, and somehow, you still look at me like I’m enough.\n\nI love that I can talk to you about everything — my fears, my dreams, my stupid thoughts. I love how you make me want to be better without even asking me to. I love you for being you.\n\nAnd I can’t wait for the day I can hold you and say all of this in person.",
+    content: "I don’t know if I tell you this enough, but I really, really love you. Not just because you’re beautiful, but because being with you feels like peace. You’ve seen me at my worst, and somehow, you still look at me like I’m enough.\n\nI love that I can talk to you about everything, my fears, my dreams, my stupid thoughts. I love how you make me want to be better without even asking me to. I love you for being you.\n\nAnd I can’t wait for the day I can hold you and say all of this in person.",
     date: "August 1, 2025",
     mood: "🌹"
   },
   {
     id: 4,
     title: "To My Forever",
-    content: "Sometimes I think about the future, and no matter what picture I paint in my head, you’re always in it. I can’t see my life without you anymore. You’re not just part of my story — you are my story.\n\nThank you for loving me, even when I don’t deserve it. Thank you for believing in me, for trusting me, for choosing me every day. You’re more than my girl — you’re my best friend, my safe space, and honestly, my favorite human in this world.\n\nI love you. Always will.",
+    content: "Sometimes I think about the future, and no matter what picture I paint in my head, you’re always in it. I can’t see my life without you anymore. You’re not just part of my story, you are my story.\n\nThank you for loving me, even when I don’t deserve it. Thank you for believing in me, for trusting me, for choosing me every day. You’re more than my girl, you’re my best friend, my safe space, and honestly, my favorite human in this world.\n\nI love you. Always will.",
     date: "August 1, 2025",
     mood: "💖"
   },
