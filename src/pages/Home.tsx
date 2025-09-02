@@ -100,7 +100,7 @@ const Home: React.FC = () => {
                 <span className="time-label">Seconds</span>
               </div> */}
             </div>
-              <p>🫶🏼</p>
+              <p style={{fontSize: "2rem"}}>🫶🏼</p>
 
             <div className="love-quote">
               <p>" you are my wildest dream,<br></br>
