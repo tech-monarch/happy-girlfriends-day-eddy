@@ -76,7 +76,7 @@ const Home: React.FC = () => {
         <motion.section className="clock-section" variants={itemVariants}>
           <div className="romantic-card clock-card">
             <h2 className="clock-title">Our Love Story Timeline</h2>
-            <p className="clock-subtitle">Since December 22, 2024 - Every moment with the Queen of my heart</p>
+            <p className="clock-subtitle">Since December 22, 2024 - August 26, 2025 <br> I cherished every moment❤️</p>
             
             <div className="time-display">
               <div className="time-unit heartbeat">
