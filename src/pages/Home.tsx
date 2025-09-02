@@ -1,38 +1,38 @@
 import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { useNavigate } from 'react-router-dom';
-import { formatDistanceToNow, differenceInDays, differenceInHours, differenceInMinutes, differenceInSeconds } from 'date-fns';
+// import { formatDistanceToNow, differenceInDays, differenceInHours, differenceInMinutes, differenceInSeconds } from 'date-fns';
 import './Home.css';
 
 const Home: React.FC = () => {
   const navigate = useNavigate();
-  const [timeData, setTimeData] = useState({
-    days: 0,
-    hours: 0,
-    minutes: 0,
-    seconds: 0,
-    totalDays: 0
-  });
+  // const [timeData, setTimeData] = useState({
+  //   days: 0,
+  //   hours: 0,
+  //   minutes: 0,
+  //   seconds: 0,
+  //   totalDays: 0
+  // });
 
-  useEffect(() => {
-    const relationshipStart = new Date('2024-12-22T00:00:00');
+  // useEffect(() => {
+  //   const relationshipStart = new Date('2024-12-22T00:00:00');
     
-    const updateTime = () => {
-      const now = new Date();
-      const days = differenceInDays(now, relationshipStart);
-      const hours = differenceInHours(now, relationshipStart) % 24;
-      const minutes = differenceInMinutes(now, relationshipStart) % 60;
-      const seconds = differenceInSeconds(now, relationshipStart) % 60;
-      const totalDays = differenceInDays(now, relationshipStart);
+  //   const updateTime = () => {
+  //     const now = new Date();
+  //     const days = differenceInDays(now, relationshipStart);
+  //     const hours = differenceInHours(now, relationshipStart) % 24;
+  //     const minutes = differenceInMinutes(now, relationshipStart) % 60;
+  //     const seconds = differenceInSeconds(now, relationshipStart) % 60;
+  //     const totalDays = differenceInDays(now, relationshipStart);
 
-      setTimeData({ days, hours, minutes, seconds, totalDays });
-    };
+  //     setTimeData({ days, hours, minutes, seconds, totalDays });
+  //   };
 
-    updateTime();
-    const interval = setInterval(updateTime, 1000);
+  //   updateTime();
+  //   const interval = setInterval(updateTime, 1000);
 
-    return () => clearInterval(interval);
-  }, []);
+  //   return () => clearInterval(interval);
+  // }, []);
 
   const containerVariants = {
     hidden: { opacity: 0 },
