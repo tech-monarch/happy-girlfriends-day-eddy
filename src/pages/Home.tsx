@@ -80,11 +80,12 @@ const Home: React.FC = () => {
             
             <div className="time-display">
               <div className="time-unit heartbeat">
-                <span className="time-number">{timeData.totalDays}</span>
-                <span className="time-label">Days Together</span>
+                {/* <span className="time-number">{timeData.totalDays}</span> */}
+                <span className="time-number">246</span>
+                <span className="time-label">Days Spent Together</span>
               </div>
               <div className="time-separator">💕</div>
-              <div className="time-unit">
+              {/* <div className="time-unit">
                 <span className="time-number">{timeData.hours}</span>
                 <span className="time-label">Hours</span>
               </div>
@@ -97,7 +98,7 @@ const Home: React.FC = () => {
               <div className="time-unit">
                 <span className="time-number">{timeData.seconds}</span>
                 <span className="time-label">Seconds</span>
-              </div>
+              </div> */}
             </div>
 
             <div className="love-quote">
