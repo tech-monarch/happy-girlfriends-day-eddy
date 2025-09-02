@@ -84,7 +84,6 @@ const Home: React.FC = () => {
                 <span className="time-number">246</span>
                 <span className="time-label">Days Spent Together</span>
               </div>
-              <p>🫶🏼</p>
               {/* <div className="time-separator">💕</div> */}
               {/* <div className="time-unit">
                 <span className="time-number">{timeData.hours}</span>
@@ -101,6 +100,7 @@ const Home: React.FC = () => {
                 <span className="time-label">Seconds</span>
               </div> */}
             </div>
+              <p>🫶🏼</p>
 
             <div className="love-quote">
               <p>" you are my wildest dream,<br></br>
